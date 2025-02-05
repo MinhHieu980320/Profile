@@ -1,0 +1,324 @@
+/* Css toàn bộ trang web */
+@font-face {
+    font-family: "MyCustomFont1";
+    src: url("/assets/font/Preahvihear-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyCustomFont2";
+    src: url("./assets/font/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyCustomFont3";
+    src: url("./assets/font/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "MyCustomFont1", sans-serif;
+}
+
+/* CSS NavBar */
+#header {
+    background-color: #1A0B2E;
+    width: 100%;
+    height: 113px;
+}
+
+#navbar {
+    width: 60%;
+    height: 113px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logoContainer {
+    margin: auto 0;
+    width: 6%;
+}
+
+#logo {
+    max-width: 35px;
+    max-height: 39px;
+    font-weight: 4px;
+}
+
+#divider {
+    width: 40%;
+}
+
+.linkContainer {
+    width: 18%;
+    text-align: center;
+}
+
+.link {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* CSS Avatar */
+body {
+    background-color: #11071F;
+    width: 100%;
+}
+
+#profile {
+    width: 60%;
+    margin: 5% auto;
+}
+
+#name-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avatarContainer {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+#arrowIcon {
+    max-height: 81.86px;
+    color: #FFFFFF;
+}
+
+.helloPart1 {
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+.helloPart2 {
+    color: #7127BA;
+    font-size: 19px;
+}
+
+#font-size-designer {
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.font-size-judges {
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+#user {
+    display: flex;
+    flex-direction: column;
+}
+
+#containerAvatar {
+    display: flex;
+    flex-direction: row;
+}
+
+#avatar {
+    max-width: 258px;
+    max-height: 259px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #763CAC 0%, #320F85 100%);
+    color: #FFFFFF;
+}
+
+.context {
+    margin-left: 2%;
+}
+
+#row3 {
+    display: inline-flex;
+    align-items: center;
+}
+
+.text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/img/Ellipse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #7127BA;
+    max-width: 188.58px;
+    max-height: 57.9px;
+    font-size: 50px;
+}
+
+#font-size-reason {
+    color: #FFFFFF;
+    font-size: 11px;
+}
+
+#font-size-currently {
+    color: #FFFFFF;
+    font-size: 21px;
+}
+
+.font-size-self-taught {
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.inline-text {
+    display: inline;
+    color: #FFFFFF;
+}
+
+.self-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mt {
+    margin-top: 5%;
+}
+
+/* CSS Work Experience */
+#work-exerience {
+    margin-top: 10%;
+}
+
+#experience-heading {
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+#work-experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experienceRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-experience-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #693B93;
+    width: 570px;
+    height: 195.68px;
+    margin: 2% 2%;
+    border-radius: 15px;
+}
+
+.experienceIcon {
+    width: 121.99px;
+    height: 115px;
+    margin: 0 2% 0 5%;
+}
+
+.poppin-font-heading {
+    font-size: 26px;
+    font-family: "MyCustomFont2", serif;
+    color: #FFFFFF;
+}
+
+.poppin-medium-para {
+    font-size: 8px;
+    font-family: "MyCustomFont3", serif;
+    color: #FFFFFF;
+}
+
+.poppin-medium-button {
+    width: 119px;
+    height: 33px;
+    background-color: #693B93;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-family: "MyCustomFont3", serif;
+    font-size: 10px;
+}
+
+/* CSS  Cross - Functional */
+#cross-functional {
+    margin-top: 10%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-functional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+}
+
+#textPart1 {
+    font-size: 24px;
+}
+
+#textPart2 {
+    font-size: 24px;
+    color: #A362FF;
+}
+
+#textPart3 {
+    font-size: 17px;
+}
+
+.container-functional-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.language-logo {
+    background-color: #251C31;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.same-size-logo {
+    width: 26px;
+    height: 25px;
+}
+
+#container-language-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    margin: 30%;
+    border-radius: 50%;
+    background: radial-gradient(circle, #301080 0%, #7840AD 100%);
+}
+
+#language-logo {
+    width: 76.14px;
+    height: 90px;
+}
+
+/* CSS cho example project */
+.container-example-image {
+    width: 642.64px;
+    height: 380.17px;
+    margin-bottom: 2%;
+}
