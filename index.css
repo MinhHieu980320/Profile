@@ -31,13 +31,16 @@
 #header {
     background-color: #1A0B2E;
     width: 100%;
-    height: 113px;
+    height: 5em;
+    margin: 0;
 }
 
 #navbar {
-    width: 60%;
-    height: 113px;
+    max-width: 1200px;
+    width: 90%;
+    height: 5em;
     margin: 0 auto;
+    padding: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,6 +69,7 @@
 .link {
     color: #FFFFFF;
     font-size: 20px;
+    text-decoration: none;
 }
 
 /* CSS Avatar */
@@ -75,20 +79,24 @@ body {
 }
 
 #profile {
-    width: 60%;
-    margin: 5% auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 2em auto;
 }
 
 #name-intro {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    padding: 5em 0;
 }
 
 #avatarContainer {
-    margin-top: 2%;
+    margin: 2em 0 0 10em;
     display: flex;
     flex-direction: row;
+    z-index: 1;
+    position: relative;
 }
 
 #arrowIcon {
@@ -116,22 +124,28 @@ body {
     color: #FFFFFF;
 }
 
-#user {
-    display: flex;
-    flex-direction: column;
-}
-
 #containerAvatar {
     display: flex;
     flex-direction: row;
+    height: 300px;
 }
 
-#avatar {
-    max-width: 258px;
-    max-height: 259px;
+.name-intro-avatar {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle at center, #763CAC 0%, #320F85 100%);
-    color: #FFFFFF;
+    background: radial-gradient(circle, #61398F 0%, #100022 60%, #0A001A 100%);
+}
+
+.name-intro-avatar img {
+    /* width: 500px;
+    height: 500px; */
 }
 
 .context {
@@ -178,19 +192,26 @@ body {
 }
 
 .self-intro {
-    display: flex;
+    margin: 5em 0;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .mt {
-    margin-top: 5%;
+    margin-top: 3em;
 }
 
 /* CSS Work Experience */
 #work-exerience {
-    margin-top: 10%;
+    margin: 5em 0;
+    background: radial-gradient(circle, #61398F 0%, #100022 60%, #0A001A 100%);
+
+}
+
+.work-exerience-container {
+    padding: 5em 0;
 }
 
 #experience-heading {
@@ -250,20 +271,31 @@ body {
 
 /* CSS  Cross - Functional */
 #cross-functional {
-    margin-top: 10%;
+    margin: 5em 0;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.container-functional {
+#container-functional-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    width: 500px;
+    min-width: 240px;
+}
+
+#container-functional-column {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-
 }
 
 #textPart1 {
@@ -277,11 +309,6 @@ body {
 
 #textPart3 {
     font-size: 17px;
-}
-
-.container-functional-row {
-    display: flex;
-    flex-direction: row;
 }
 
 .language-logo {
@@ -311,14 +338,131 @@ body {
     background: radial-gradient(circle, #301080 0%, #7840AD 100%);
 }
 
-#language-logo {
-    width: 76.14px;
-    height: 90px;
+#skill-branch {
+    width: 75%;
+    height: 450px;
+    margin-top: -1em;
 }
 
 /* CSS cho example project */
-.container-example-image {
+#example-project {
+    display: flex;
+    flex-direction: column;
+    margin: 5em 0;
+}
+
+.example-project-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2em 0;
+    background: radial-gradient(circle at 70% center, #61398F 0%, #100022 40%, #0A001A 90%);
+    padding: 8em 0;
+}
+
+.example-project-row-left {
+    background: radial-gradient(circle at 30% center, #61398F 0%, #100022 40%, #0A001A 90%);
+}
+
+.container-example-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em 0;
+}
+
+.container-example-right {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.example-heading {
+    color: #9857D3;
+    font-size: 16px;
+    font-family: "MyCustomFont3";
+}
+
+.example-title {
+    color: #CCD6F6;
+    font-size: 34px;
+    font-family: "MyCustomFont3";
+}
+
+.container-example-para {
+    width: 120%;
+    background-color: #693B93;
+    border-radius: 1em;
+    position: relative;
+    z-index: 1;
+}
+
+.example-para {
+    color: #CCD6F6;
+    font-size: 18px;
+    font-family: "MyCustomFont3";
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+}
+
+.container-example {
+    position: relative;
     width: 642.64px;
     height: 380.17px;
-    margin-bottom: 2%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* 
+.example-project-img {
+    background: radial-gradient(circle, #61398F 0%, #100022 60%, #0A001A 100%);
+    margin: 5em 0;
+} */
+
+.container-example-image {
+    width: 50%;
+    border: 1px solid #000000;
+    border-radius: 1em;
+    background-color: #2B0B3A;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 3em;
+}
+
+.container-example-image img {
+    width: 100%;
+    padding: 2em 0 0 2em;
+}
+
+.example-project-image-left img {
+    width: 100%;
+    padding: 2em 2em 0 0;
+}
+
+.container-example-icon {
+    margin: 1em;
+}
+
+.container-example-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-contact {
+    margin: 10em 0;
+    color: #FFFFFF;
+}
+
+#footer {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.footer-icon {
+    margin: 0 1em 0 0;
 }
