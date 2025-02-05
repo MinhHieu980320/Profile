@@ -74,7 +74,7 @@
 
 /* CSS Avatar */
 body {
-    background-color: #11071F;
+    background-color: #0A001A;
     width: 100%;
 }
 
@@ -140,7 +140,7 @@ body {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, #61398F 0%, #100022 60%, #0A001A 100%);
+    background: radial-gradient(circle, #61398F 0%, #100022 60%, #0A001A 0%);
 }
 
 .name-intro-avatar img {
@@ -149,7 +149,7 @@ body {
 }
 
 .context {
-    margin-left: 2%;
+    margin-left: 0 1em;
 }
 
 #row3 {
@@ -176,14 +176,14 @@ body {
     font-size: 11px;
 }
 
-#font-size-currently {
-    color: #FFFFFF;
+.font-size-currently {
     font-size: 21px;
 }
 
 .font-size-self-taught {
     color: #FFFFFF;
-    font-size: 22px;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .inline-text {
@@ -193,10 +193,15 @@ body {
 
 .self-intro {
     margin: 5em 0;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+}
+
+.self-intro-text {
+    color: #1877F2;
+    text-decoration: none;
+}
+
+.self-intro-social {
+    vertical-align: middle;
 }
 
 .mt {
@@ -206,12 +211,11 @@ body {
 /* CSS Work Experience */
 #work-exerience {
     margin: 5em 0;
-    background: radial-gradient(circle, #61398F 0%, #100022 60%, #0A001A 100%);
-
+    background: radial-gradient(circle, #61398F 0%, #100022 50%, #0A001A 0%);
 }
 
 .work-exerience-container {
-    padding: 5em 0;
+    padding: 8em 0;
 }
 
 #experience-heading {
@@ -234,16 +238,19 @@ body {
     flex-direction: row;
     align-items: center;
     border: 1px solid #693B93;
-    width: 570px;
-    height: 195.68px;
-    margin: 2% 2%;
+    width: 50%;
+    margin: 1em;
+    padding: 1em;
     border-radius: 15px;
+    background: linear-gradient(135deg, #2A0E49 0%, #190A32 50%, #100022 100%);
+    box-shadow: 0px 0px 15px rgba(138, 43, 226, 0.2);
 }
 
 .experienceIcon {
-    width: 121.99px;
-    height: 115px;
-    margin: 0 2% 0 5%;
+    width: 25%;
+    height: 100%;
+    margin: 1em;
+    object-fit: contain;
 }
 
 .poppin-font-heading {
@@ -259,12 +266,12 @@ body {
 }
 
 .poppin-medium-button {
-    width: 119px;
-    height: 33px;
-    background-color: #693B93;
+    background-color: #2C1250;
     color: #FFFFFF;
-    border: none;
+    border: 1px solid #693B93;
     border-radius: 10px;
+    padding: 5px 10px;
+    margin: 1em;
     font-family: "MyCustomFont3", serif;
     font-size: 10px;
 }
@@ -323,8 +330,9 @@ body {
 }
 
 .same-size-logo {
-    width: 26px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
 #container-language-logo {
@@ -357,12 +365,12 @@ body {
     flex-wrap: wrap;
     width: 100%;
     margin: 2em 0;
-    background: radial-gradient(circle at 70% center, #61398F 0%, #100022 40%, #0A001A 90%);
+    background: radial-gradient(circle at 70% center, #61398F 0%, #100022 35%, #0A001A 0%);
     padding: 8em 0;
 }
 
 .example-project-row-left {
-    background: radial-gradient(circle at 30% center, #61398F 0%, #100022 40%, #0A001A 90%);
+    background: radial-gradient(circle at 30% center, #61398F 0%, #100022 40%, #0A001A 0%);
 }
 
 .container-example-left {
@@ -393,7 +401,14 @@ body {
 
 .container-example-para {
     width: 120%;
-    background-color: #693B93;
+    background: linear-gradient(135deg, rgba(42, 14, 73, 0.2) 0%, rgba(25, 10, 50, 0.8) 100%);
+    backdrop-filter: blur(10px);
+    /* Hiệu ứng mờ nền */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Viền sáng nhẹ */
+    color: #ffffff;
+    /* Màu chữ trắng */
+
     border-radius: 1em;
     position: relative;
     z-index: 1;
@@ -459,10 +474,39 @@ body {
 #footer {
     max-width: 1200px;
     width: 90%;
-    margin: 0 auto;
+    margin: 5em auto;
     color: #FFFFFF;
 }
 
 .footer-icon {
     margin: 0 1em 0 0;
+}
+
+@media (max-width: 1024px) {
+    .example-para {
+        font-size: 0.8em;
+    }
+
+    .example-title {
+        font-size: 1.5em;
+    }
+
+    .same-size-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .font-size-judges {
+        font-size: 2em;
+    }
+
+    .poppin-font-heading {
+        font-size: 1em;
+    }
+
+    #skill-branch {
+        width: 80%;
+        height: 300px;
+        margin-top: -1em;
+    }
 }
