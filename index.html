@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preload" href="./index.css" as="style">
     <link href="./index.css" rel="stylesheet">
 </head>
 
@@ -33,7 +34,8 @@
             <div id="name-intro">
                 <div id="avatarContainer">
                     <img id="arrowIcon" src="/assets/img/ArrowIcon.png" alt="ArrowIcon.png">
-                    <p class="helloPart1">Hello! I Am&nbsp;<span class="helloPart2">Ibrahim Memon</span></p>
+                    <p class="helloPart1">Hello! I Am&nbsp;<span id="my-name" class="helloPart2">Ibrahim Memon</span>
+                    </p>
                 </div>
                 <div id="containerAvatar">
                     <div class="name-intro-avatar">
@@ -53,26 +55,22 @@
             </div>
             <div class="self-intro">
                 <div>
-                    <h2 class="font-size-judges">I'm a Software Engineer.|</h2>
+                    <h2 id="my-job" class="font-size-judges">I'm a Software Engineer.|</h2>
                     <h4 class="font-size-currently font-size-self-taught">Currently. I'm a Software Engineer at
                         &nbsp;
                         <a href="#" class="self-intro-text"><img class="self-intro-social"
                                 src="assets/img/FacebookLogo.png" alt="FacebookLogo.png">&nbsp; Facebook</a>,
                     </h4>
                 </div>
-                <div class="mt">
-                    <h4 class="font-size-self-taught">A self-taught UI/UX designer, functioning in the industry for
-                        3+
-                        years
-                        now.</h4>
-                    <h4 class="font-size-self-taught">I make meaningful and delightful digital products that create
-                        an
-                        equilibrium</h4>
-                    <h4 class="font-size-self-taught">between user needs and business goals.</h4>
-                </div>
+                <p id="introduction" class="font-size-self-taught">A self-taught UI/UX designer, functioning in the
+                    industry for 3+
+                    years now.
+                    I make meaningful and delightful digital products that create an equilibrium between user needs
+                    and business goals.</p>
+
             </div>
             <div id="work-exerience">
-                <div class="work-exerience-container">
+                <div id="work-exerience-container">
                     <h2 id="experience-heading">Work Experience</h2>
                     <div class="experienceRow">
                         <div class="container-experience-box">
@@ -167,6 +165,12 @@
                         <img class="same-size-logo" src="/assets/img/MongoDBLogo.png" alt="MongoDBLogo.png">
                     </div>
                 </div>
+                <div class="popup-backdrop" id="popupBackdrop"></div>
+                <div class="popup" id="popupContent">
+                    <h3 id="popupTitle"></h3>
+                    <p id="popupDescription"></p>
+                    <p id="popupRate"></p>
+                </div>
                 <img id="skill-branch" src="/assets/img/SkillBranch.png" alt="Skill.png">
             </div>
             <div id="example-project">
@@ -219,7 +223,7 @@
             </div>
             <div class="profile-contact">
                 <h2>Contact</h2>
-                <div>
+                <div id="contact">
 
                 </div>
             </div>
@@ -232,13 +236,15 @@
                 <img class="footer-icon" src="/assets/img/GoogleLogo.png" alt="GoogleLogo.png">
             </div>
             <div>
-                <p>I'm currently looking to join a cross-functional team that values improving people's lives
+                <p id="desire">I'm currently looking to join a cross-functional team that values improving people's
+                    lives
                     through accessible design. or have a project in mind? Let's connect.</p>
                 <br />
-                <p>ibrhaimmemon930@gmail.com</p>
+                <p id="my-email">ibrhaimmemon930@gmail.com</p>
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

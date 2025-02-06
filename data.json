@@ -1,0 +1,71 @@
+{
+    "name": "Nguyen Minh Hieu",
+    "email": "nguyenminhhieu19980320@gmail.com",
+    "intro": "I am a Front End developer with 2 years of experience in web application development. During this time, I have worked on a variety of projects, focusing on building responsive, user-friendly, and visually appealing interfaces. I am passionate about technology and always looking for opportunities to learn and grow. I continuously strive to stay updated with the latest trends and best practices in web development, including mastering frameworks like React, Vue, and Angular. I enjoy collaborating with cross-functional teams to create seamless and impactful user experiences. My goal is to leverage my skills to contribute to innovative projects and help bring creative ideas to life.",
+    "experience": [
+        {
+            "company": "XTP Limited Liability Company",
+            "position": "Frontend Developer",
+            "year": "2023 - 2024",
+            "image": "assets/img/WorkExperience1.png",
+            "description": "Working with technologies such as HTML, CSS, JavaScript, ReactJs, and Material UI to develop user interfaces for web applications."
+        },
+        {
+            "company": "FPT IS Corporation",
+            "position": "Frontend Developer",
+            "year": "2024",
+            "image": "assets/img/WorkExperience2.png",
+            "description": "Creating interfaces with the Webix library, handling logic errors with JavaScript. Optimizing the system to improve performance and scalability."
+        }
+    ],
+    "languages": [
+        {
+            "name": "JavaScript",
+            "logo": "assets/img/JavascriptLogo.png",
+            "explained": "With over 2 years of experience working with JavaScript, I have developed the ability to build and optimize dynamic web applications, from data processing to creating smooth and interactive user experiences. I am proficient in core JavaScript concepts such as closures, promises, async/await, and ES6+, and have experience working with libraries and frameworks like ReactJS, enabling me to create modern and efficient web applications.",
+            "proficiencyLevel": "80%"
+        },
+        {
+            "name": "HTML/CSS",
+            "logo": "assets/img/HTMLCSSLogo.png",
+            "explained": "I have a solid foundation in using HTML and CSS to build visually appealing and user-friendly interfaces. I am well-versed in using HTML elements correctly and have experience designing responsive layouts using Flexbox and CSS Grid, ensuring an optimized user experience across multiple devices and browsers.",
+            "proficiencyLevel": "80%"
+        },
+        {
+            "name": "ReactJs",
+            "logo": "assets/img/ReactLogo.png",
+            "explained": "With ReactJS, I have extensive experience building dynamic web applications and optimizing performance through concepts like component-based architecture, hooks, and state management. I have developed complex applications with reusable code, and integrated ReactJS with other libraries such as Redux for global state management and Axios for efficient API calls.",
+            "proficiencyLevel": "50%"
+        },
+        {
+            "name": "Material UI",
+            "logo": "assets/img/MaterialUILogo.png",
+            "explained": "I have used Material UI to create beautiful and consistent user interfaces based on Google’s Material Design principles. I have applied Material UI in various ReactJS projects to build aesthetically pleasing and user-friendly interfaces, while also optimizing UI components to meet user interaction requirements and needs.",
+            "proficiencyLevel": "50%"
+        },
+        {
+            "name": "Webix",
+            "logo": "assets/img/WebixLogo.jpg",
+            "explained": "With Webix, I have built web applications with complex user interfaces, featuring components such as dashboards, charts, and interactive widgets. I have utilized Webix’s features to develop powerful data management interfaces, improving both the performance and functionality of web applications.",
+            "proficiencyLevel": "60%"
+        }
+    ],
+    "projects": [
+        {
+            "title": " Human Resources Management",
+            "description": "This is a full-fledged e-commerce platform for clothing and footwear, built using React.js for the frontend and JSON Server to simulate a backend database for user management. The platform allows users to register, log in. Users can browse a wide selection of products, including clothing and footwear, each with detailed information such as name, price, and description. Additionally, the platform features a shopping cart where users can easily add items, modify quantities, or remove products, and proceed with a smooth and secure checkout process to complete their purchases. The platform also offers detailed store information, enabling users to browse various product categories, including apparel and shoes, for an interactive and seamless shopping experience.",
+            "link": "https://github.com/NguyenMinhHieu98/ThucTapXTP/tree/main/QLNS"
+        },
+        {
+            "title": "Clothing And Shoe Store",
+            "description": "This is an employee management system designed to streamline the process of managing employee data within a company. The frontend is built using React.js for a dynamic and responsive user interface, while the backend is powered by JSON Server, simulating a real-time database. The application features a table that displays a comprehensive list of employees, including details such as name, gender, date of birth, address, password, and password confirmation. Users can easily add new employees, edit existing information, and delete records when necessary. This system provides a simple and efficient solution for managing employee data, ensuring smooth and effective handling of employee records within an organization.",
+            "link": "https://github.com/NguyenMinhHieu98/ThucTapXTP/tree/main/Web%20b%C3%A1n%20h%C3%A0ng"
+        }
+    ],
+    "contact": {
+        "phone": "0335823419",
+        "address": "Số nhà 12, ngõ 858 Kim Giang, xã Thanh Liệt, huyện Thanh Trì, thành phố Hà Nội",
+        "github": "https://github.com/MinhHieu980320"
+    },
+    "desire": "As a frontend developer, I am always eager to join a cross-functional team where we can work together to create meaningful and accessible solutions that enhance people's lives. I believe in the power of user-centered design and continuous improvement. If you have a project in mind or would like to collaborate on an exciting opportunity, let's connect and discuss how we can bring ideas to life."
+}
