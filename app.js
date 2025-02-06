@@ -17,6 +17,10 @@ function UpdateMyCV() {
     myName.textContent = data.name;
 
 
+    const myAvatar = document.getElementById("my-avatar");
+    myAvatar.src = data.avatar;
+
+
     const myJob = document.getElementById("my-job");
     myJob.textContent = cutString(data.intro, 6);
 
@@ -49,7 +53,7 @@ function UpdateMyCV() {
                             <h2 class="poppin-font-heading">${element.position}</h2>
                             <h3 class="poppin-font-heading">${element.year}</h3>
                             <p class="poppin-medium-para">${element.description}</p>
-                            <button class="poppin-medium-button">Learn More</button>
+                            <button class="poppin-medium-button" onclick="location.href='${element.src}'">Learn More</button>
                         </div>
                 </div>`;
     });
@@ -88,7 +92,7 @@ function UpdateMyCV() {
 
             document.getElementById("popupTitle").textContent = name;
             document.getElementById("popupDescription").innerHTML = `<span class="bold-first-word">Description: </span>${description}`;
-            document.getElementById("popupRate").innerHTML = `<span class="bold-first-word">Rate: </span>${rate}`;
+            document.getElementById("popupRate").innerHTML = `<span class="bold-first-word">Proficiency Level: </span>${rate}`;
 
             popup.style.display = "block";
             popupBackdrop.style.display = "block";
@@ -109,29 +113,9 @@ function UpdateMyCV() {
 
     let htmlExample = data.projects.map((element, index) => {
         if (index % 2 !== 0) {
-            return `<div class="example-project-row">
-                    <div class="container-example-left">
-                        <div>
-                            <h4 class="example-heading">Featured Project</h4>
-                            <h2 class="example-title">${element.title}</h2>
-                        </div>
-                        <div class="container-example-para">
-                            <p class="example-para">${element.description}</p>
-                        </div>
-                        <div class="container-example-icon">
-                            <img src="/assets/img/ClickIcon.png" alt="ClickIcon.png">
-                            <img src="/assets/img/ClickIcon.png" alt="ClickIcon.png">
-                        </div>
-                    </div>
-                    <div class="container-example-image">
-                        <a href="${element.link}"><img src="/assets/img/ExampleProject1.png" alt="ExampleProject1.png"></a>
-                    </div>
-                </div>`;
-        }
-        else {
             return `<div class="example-project-row example-project-row-left">
                         <div class="container-example-image example-project-image-left">
-                            <a href="${element.link}"><img src="/assets/img/ExampleProject2.png" alt="ExampleProject2.png"></a>
+                            <a href="${element.link}"><img src="${element.imageSrc}" alt="ExampleProject2.png"></a>
                         </div>
                         <div class="container-example-left container-example-right">
                             <div>
@@ -147,6 +131,26 @@ function UpdateMyCV() {
                             </div>
                         </div>
                     </div>`;
+        }
+        else {
+            return `<div class="example-project-row">
+                    <div class="container-example-left">
+                        <div>
+                            <h4 class="example-heading">Featured Project</h4>
+                            <h2 class="example-title">${element.title}</h2>
+                        </div>
+                        <div class="container-example-para">
+                            <p class="example-para">${element.description}</p>
+                        </div>
+                        <div class="container-example-icon">
+                            <img src="/assets/img/ClickIcon.png" alt="ClickIcon.png">
+                            <img src="/assets/img/ClickIcon.png" alt="ClickIcon.png">
+                        </div>
+                    </div>
+                    <div class="container-example-image">
+                        <a href="${element.link}"><img src="${element.imageSrc}" alt="ExampleProject1.png"></a>
+                    </div>
+                </div>`;
         }
     });
 

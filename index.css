@@ -136,16 +136,17 @@ body {
     align-items: center;
     align-self: center;
     justify-content: center;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-top: -4em;
     background: radial-gradient(circle, #61398F 0%, #100022 60%, #0A001A 0%);
 }
 
 .name-intro-avatar img {
-    /* width: 500px;
-    height: 500px; */
+    width: 9em;
+    height: 10em;
+    border-radius: 50%;
 }
 
 .context {
@@ -211,7 +212,7 @@ body {
 /* CSS Work Experience */
 #work-exerience {
     margin: 5em 0;
-    background: radial-gradient(circle, #61398F 0%, #100022 50%, #0A001A 0%);
+    background: radial-gradient(circle, #61398F 0%, #100022 45%, #0A001A 0%);
 }
 
 #work-exerience-container {
@@ -381,8 +382,8 @@ body {
 }
 
 .same-size-logo {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     object-fit: contain;
 }
 
@@ -421,7 +422,7 @@ body {
 }
 
 .example-project-row-left {
-    background: radial-gradient(circle at 30% center, #61398F 0%, #100022 40%, #0A001A 0%);
+    background: radial-gradient(circle at 30% center, #61398F 0%, #100022 35%, #0A001A 0%);
 }
 
 .container-example-left {
@@ -534,6 +535,10 @@ body {
 }
 
 @media (max-width: 1024px) {
+    #work-exerience {
+        background: radial-gradient(circle, #61398F 0%, #100022 50%, #0A001A 0%);
+    }
+
     .example-para {
         font-size: 0.6em;
     }
@@ -577,14 +582,26 @@ body {
     }
 
     .name-intro-avatar img {
-        width: 100px;
-        height: 100px;
+        width: 6em;
+        height: 7em;
     }
 }
 
 @media (max-width: 914px) {
+    .link {
+        font-size: 15px;
+    }
+
+    #work-exerience {
+        background: radial-gradient(circle, #61398F 0%, #100022 35%, #0A001A 0%);
+    }
+
     .example-para {
         font-size: 0.1em;
+    }
+
+    .example-project-row {
+        background: radial-gradient(circle at 60% center, #61398F 0%, #100022 35%, #0A001A 0%);
     }
 
     #header {
@@ -593,5 +610,9 @@ body {
 
     #navbar {
         height: 4.5em;
+    }
+
+    .example-project-row-left {
+        background: radial-gradient(circle at 40% center, #61398F 0%, #100022 35%, #0A001A 0%);
     }
 }
